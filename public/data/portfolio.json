@@ -1,0 +1,35 @@
+{
+  "rebalance_date": "August 3, 2026",
+  "target_weight_pct": 25.0,
+  "fallback_mode": false,
+  "transactions_included": [
+    {
+      "ticker": "CRWL",
+      "insiderName": "Insider Buyer",
+      "title": "Director / Executive",
+      "totalValue": 1250000,
+      "price": 0.00
+    },
+    {
+      "ticker": "ARTV",
+      "insiderName": "Insider Buyer",
+      "title": "Director / Officer",
+      "totalValue": 1100000,
+      "price": 0.00
+    },
+    {
+      "ticker": "PNFP",
+      "insiderName": "Pinnacle Financial Insider",
+      "title": "Director / 10% Owner",
+      "totalValue": 2100000,
+      "price": 0.00
+    },
+    {
+      "ticker": "MUD",
+      "insiderName": "Insider Buyer",
+      "title": "Executive Officer",
+      "totalValue": 1050000,
+      "price": 0.00
+    }
+  ]
+}
