@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 
-// Exact historical dataset mapped from Aug 21, 2025 to Aug 6, 2026
+// Historical return trajectory mapped from Aug 21, 2025 inception
 const HISTORICAL_PERFORMANCE = [
   { date: "Aug 21, 2025", portfolio: 100.0, voo: 100.0 },
   { date: "Sep 2025",     portfolio: 125.88, voo: 105.03 },
@@ -78,9 +78,9 @@ export default function InsiderDashboard() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-5">
           <div>
-            <h1 className="text-3xl font-extrabold tracking-tight text-white">{"$1M+"} Insider Portfolio</h1>
+            <h1 className="text-3xl font-extrabold tracking-tight text-white">Luke Newcomb{"'"}s Insider Trading Fund</h1>
             <p className="text-sm text-slate-400 mt-1">
-              Automated equal-weight strategy tracking open-market {"$1M+"} SEC Form 4 buy filings over 7-day windows.
+              Automated equal-weight quantitative strategy tracking open-market {"$1M+"} SEC Form 4 buy filings over 7-day windows.
             </p>
           </div>
           <div className="mt-4 md:mt-0 flex items-center gap-3">
@@ -141,7 +141,7 @@ export default function InsiderDashboard() {
           </div>
         </div>
 
-        {/* Current Active Holdings Table */}
+        {/* Active Holdings Table */}
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
           <div className="flex justify-between items-center mb-4">
             <div>
@@ -174,6 +174,30 @@ export default function InsiderDashboard() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Bio / About Section */}
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-slate-300 space-y-4">
+          <h2 className="text-xl font-bold text-white border-b border-slate-800 pb-3">About the Fund Manager</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            <div className="md:col-span-2 space-y-3 text-sm leading-relaxed text-slate-300">
+              <p>
+                <strong className="text-white">Luke Newcomb</strong> is a quantitative researcher and student specializing in quantitative financial analysis, data modeling, and automated equity research. 
+              </p>
+              <p>
+                This portfolio strategy systematically monitors open-market SEC Form 4 filings, isolating significant insider accumulation exceeding $1,000,000 in transaction value. By applying equal-weight allocation rebalancing every Monday morning, the strategy captures institutional insider conviction while minimizing individual single-stock concentration risk.
+              </p>
+            </div>
+            
+            <div className="bg-slate-950 border border-slate-800/80 rounded-lg p-4 space-y-3 text-xs">
+              <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400 block">Academic Path</span>
+              <div>
+                <p className="font-bold text-white text-sm">Southern Connecticut State University</p>
+                <p className="text-slate-400 mt-1">B.S. in Applied Mathematics (Graduating Spring 2027)</p>
+                <p className="text-slate-400">M.S. in Financial Risk Management (Graduating Spring 2028)</p>
+              </div>
+            </div>
           </div>
         </div>
 
